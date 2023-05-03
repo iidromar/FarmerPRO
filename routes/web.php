@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\farmer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [farmer::class, 'dashboard'])->name('dashboard');
 
-Route::get('/home', function () {
-    return view('welcome');
-});
+Route::get('/farmers_table', [farmer::class, 'farmers_table'])->name('farmers_table');
+
