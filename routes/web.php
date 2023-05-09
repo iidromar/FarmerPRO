@@ -18,3 +18,6 @@ Route::get('/', [farmer::class, 'dashboard'])->name('dashboard');
 
 Route::get('/farmers_table', [farmer::class, 'farmers_table'])->name('farmers_table');
 
+Route::get('/farmer_page/{id}', [farmer::class, 'farmer_page'])->name('farmer_page');
+
+Route::post('/sending_farmer', [farmer::class, 'farmer_sending'])->name('conf');
