@@ -159,9 +159,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #031b4e;
-  text-align: left;
   background-color: #fff;
     text-align: right;
+
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -1237,9 +1237,8 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-      width: 1%;
-      text-align: right;
     border-top: 1px solid #cdd4e0;
+      cursor: pointer;
   }
   .table thead th {
     vertical-align: bottom;
